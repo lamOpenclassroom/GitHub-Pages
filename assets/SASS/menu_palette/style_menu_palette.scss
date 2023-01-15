@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Shrikhand & display=swap');
+/*@use "/assets/SASS/mixins/mixins";*/
+
+@mixin subtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 13px;
+}
+
+@mixin dish-list {
+    box-shadow: 0px 4.01149px 15.0431px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    margin: 12px 13px;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 12px 17px 12px 10px;
+    cursor: pointer;
+    animation: defil 1000ms both;
+}
+
+@mixin price {
+    position: absolute;
+    right: 17px;
+    bottom: 12px;
+}
+
+@mixin travel-time-price{
+    transform: translate(-250%, 0);
+}
+
+@mixin initial-validation {
+    color: transparent;
+    position: absolute;
+    font-size: 1.25rem;
+    padding: 25px 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin final-validation {
+    border-radius: 0 15px 15px 0;
+    background: #99E2D0;
+    color: #fff;
+    transform-origin: right;
+}
+
+@keyframes defil {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*N'augmente pas la largeur*/
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            size: 2rem;
+            margin: 14px 0 5px 0;
+            text-align: center;
+
+            a {
+                position: absolute;
+                top: 26px;
+                left: 23px;
+                font-size: 1.5rem;
+                color: #000;
+            }
+
+            .header__logo {
+                font-family: 'shrikhand', sans-serif;
+            }
+        }
+
+
+        .imgSection {
+            position: relative;
+            
+            .mainSection {
+                display: flex;
+                flex-direction: column;
+                background: #F7F7F7;
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                position: absolute;
+                top: 80%;
+                
+                h2 {
+                    font-family: 'shrikhand', sans-serif;
+                    padding: 32px 17px 42px;
+                    font-size: 1.75rem;
+                }
+
+                .icon-solid-heart {
+                    position: absolute;
+                    top: 40px;
+                    right: 41px;
+                    font-size: 1.5rem;
+                    color: transparent;
+                    -webkit-text-stroke: #000 2px;
+                    background-clip: text;
+                    height: 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+                        -webkit-text-stroke: #fff;
+                        transition: all ease-in-out 4s;
+                        height: 100%;
+                    }
+                }
+                @for $i from 1 through 9{
+                    #menu_#{$i}{
+                        animation-delay: 1s * $i;                
+                    }
+                }
+
+                /*ENTREES*/
+                .mainSection__sousTitre--entree {
+                    @include subtitle;
+                }
+
+                .mainSection__entree {
+                    @include dish-list;
+
+                    .price--entree {
+                        @include price;
+                    }
+
+                    &:hover>.price--entree {
+                        @include travel-time-price;
+                    }
+
+                    #plat_1 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_1 {
+                        @include final-validation;
+                    }
+
+                    #plat_2 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_2 {
+                        @include final-validation;
+                    }
+
+                    #plat_3 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_3 {
+                        @include final-validation;
+                    }
+
+                    #plat_3 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_3 {
+                        @include final-validation;
+                    }
+                }
+
+                /*PLATS*/
+                .mainSection__sousTitre--plat {
+                    @include subtitle;
+                }
+
+                .mainSection__plat {
+                    @include dish-list;
+
+                    .price--plat {
+                        @include price;
+                    }
+
+                    &:hover>.price--plat {
+                        @include travel-time-price;
+                    }
+
+                    #plat_4 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_4 {
+                        @include final-validation;
+                    }
+
+                    #plat_5 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_5 {
+                        @include final-validation;
+                    }
+
+                    #plat_6 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_6 {
+                        @include final-validation;
+                    }
+                }
+
+                /*DESSERT*/
+                .mainSection__sousTitre--dessert {
+                    @include subtitle;
+                }
+
+                .mainSection__dessert {
+                    @include dish-list;
+
+                    .price--dessert {
+                        @include price;
+                    }
+
+                    &:hover>.price--dessert {
+                        @include travel-time-price;
+                    }
+
+                    #plat_7 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_7 {
+                        @include final-validation;
+                    }
+
+                    #plat_8 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_8 {
+                        @include final-validation;
+                    }
+
+                    #plat_9 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_9 {
+                        @include final-validation;
+                    }
+                }
+
+                button {
+                    padding: 13px 16px;
+                    margin: 40px 94px;
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: bolder;
+                    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+                    border-radius: 25px;
+                    border: none;
+                }
+
+                footer {
+                    background: #353535;
+                    color: #fff;
+                    padding: 22px 0 33px 25px;
+
+                    h3 {
+                        font-family: "shrikhand", sans-serif;
+                        font-size: 1.13rem;
+                        padding-bottom: 16px;
+                        font-style: italic;
+                        font-weight: inherit;
+                    }
+
+                    li {
+                        list-style-type: none;
+                        padding-bottom: 7px;
+                        position: relative;
+                    }
+
+                    .ustensil::before {
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: #fff;
+                        content: "\f2e7";
+                        padding-right: 5px;
+                    }
+
+                    .handshake::before {
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: #fff;
+                        content: "\f4c4";
+                        padding-right: 5px;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
