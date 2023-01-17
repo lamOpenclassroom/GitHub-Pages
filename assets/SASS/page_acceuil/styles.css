@@ -2,12 +2,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
 /*-----------------Paramètre global---------------*/
+@-webkit-keyframes loader {
+  0% {
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+    opacity: 1;
+  }
+  90% {
+    color: lightgrey;
+    opacity: 0.2;
+  }
+  100% {
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loader {
+  0% {
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+    opacity: 1;
+  }
+  90% {
+    color: lightgrey;
+    opacity: 0.2;
+  }
+  100% {
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @media screen and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*N'augmente pas la largeur*/
+    box-sizing: border-box;
+    /*N'augmente pas la largeur*/
     font-family: "Roboto", sans-serif;
+  }
+  /*mon loader*/
+  #loader {
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background: lightgrey;
+    color: white;
+    font-weight: bold;
+    top: 0;
+    -webkit-animation: loader 1s 4s;
+            animation: loader 1s 4s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #loader .letter:nth-child(1) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  #loader .letter:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  #loader .letter:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  #loader .letter:nth-child(4) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  #loader ul {
+    list-style-type: none;
+    font-size: 3rem;
+    display: flex;
+    letter-spacing: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  #loader ul li {
+    -webkit-animation: loader 1.5s infinite;
+            animation: loader 1.5s infinite;
   }
   .header__logo {
     font-family: "shrikhand", sans-serif;
@@ -54,6 +134,11 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border: 0;
     color: #fff;
+  }
+  .sectionOne .sectionOne__btn:hover {
+    opacity: 0.8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
   }
   .sectionTwo {
     background-color: #fff;
@@ -186,11 +271,14 @@
     font-style: italic;
     font-weight: inherit;
   }
-  footer li {
+  footer a {
     list-style-type: none;
+    text-decoration: none;
     padding-bottom: 7px;
+    color: #fff;
   }
-  footer li i {
+  footer a i {
     padding-right: 11px;
+    color: #fff;
   }
 }/*# sourceMappingURL=styles.css.map */
