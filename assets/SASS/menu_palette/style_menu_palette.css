@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
-/*@use "/assets/SASS/mixins/mixins";*/
 @-webkit-keyframes defil {
   0% {
     transform: scale(0);
@@ -114,6 +113,10 @@
     -webkit-animation-delay: 9s;
             animation-delay: 9s;
   }
+  .container .imgSection .mainSection #menu_10 {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+  }
   .container .imgSection .mainSection .mainSection__sousTitre--entree {
     font-size: 1rem;
     text-transform: uppercase;
@@ -128,13 +131,16 @@
     height: auto;
     padding: 12px 17px 12px 10px;
     cursor: pointer;
-    -webkit-animation: defil 1000ms both;
-            animation: defil 1000ms both;
+    -webkit-animation: defil 1s both;
+            animation: defil 1s both;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .container .imgSection .mainSection .mainSection__entree .price--entree {
     position: absolute;
     right: 17px;
     bottom: 12px;
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__entree:hover > .price--entree {
     transform: translate(-250%, 0);
@@ -146,13 +152,15 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__entree:hover > #plat_1 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__entree #plat_2 {
     color: transparent;
@@ -161,13 +169,15 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__entree:hover > #plat_2 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__entree #plat_3 {
     color: transparent;
@@ -176,28 +186,32 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__entree:hover > #plat_3 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
-  .container .imgSection .mainSection .mainSection__entree #plat_3 {
+  .container .imgSection .mainSection .mainSection__entree #plat_4 {
     color: transparent;
     position: absolute;
     font-size: 1.25rem;
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
-  .container .imgSection .mainSection .mainSection__entree:hover > #plat_3 {
+  .container .imgSection .mainSection .mainSection__entree:hover > #plat_4 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__sousTitre--plat {
     font-size: 1rem;
@@ -213,13 +227,16 @@
     height: auto;
     padding: 12px 17px 12px 10px;
     cursor: pointer;
-    -webkit-animation: defil 1000ms both;
-            animation: defil 1000ms both;
+    -webkit-animation: defil 1s both;
+            animation: defil 1s both;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .container .imgSection .mainSection .mainSection__plat .price--plat {
     position: absolute;
     right: 17px;
     bottom: 12px;
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__plat:hover > .price--plat {
     transform: translate(-250%, 0);
@@ -231,13 +248,15 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__plat:hover > #plat_4 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__plat #plat_5 {
     color: transparent;
@@ -246,13 +265,15 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__plat:hover > #plat_5 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__plat #plat_6 {
     color: transparent;
@@ -261,13 +282,32 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__plat:hover > #plat_6 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
+  }
+  .container .imgSection .mainSection .mainSection__plat #plat_7 {
+    color: transparent;
+    position: absolute;
+    font-size: 1.25rem;
+    padding: 25px 20px;
+    top: 0;
+    bottom: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
+  }
+  .container .imgSection .mainSection .mainSection__plat:hover > #plat_7 {
+    border-radius: 0 15px 15px 0;
+    background: #99E2D0;
+    color: #fff;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__sousTitre--dessert {
     font-size: 1rem;
@@ -283,13 +323,16 @@
     height: auto;
     padding: 12px 17px 12px 10px;
     cursor: pointer;
-    -webkit-animation: defil 1000ms both;
-            animation: defil 1000ms both;
+    -webkit-animation: defil 1s both;
+            animation: defil 1s both;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .container .imgSection .mainSection .mainSection__dessert .price--dessert {
     position: absolute;
     right: 17px;
     bottom: 12px;
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__dessert:hover > .price--dessert {
     transform: translate(-250%, 0);
@@ -301,13 +344,15 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__dessert:hover > #plat_7 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__dessert #plat_8 {
     color: transparent;
@@ -316,13 +361,15 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__dessert:hover > #plat_8 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection .mainSection__dessert #plat_9 {
     color: transparent;
@@ -331,13 +378,32 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
   }
   .container .imgSection .mainSection .mainSection__dessert:hover > #plat_9 {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
+  }
+  .container .imgSection .mainSection .mainSection__dessert #plat_10 {
+    color: transparent;
+    position: absolute;
+    font-size: 1.25rem;
+    padding: 25px 20px;
+    top: 0;
+    bottom: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
+  }
+  .container .imgSection .mainSection .mainSection__dessert:hover > #plat_10 {
+    border-radius: 0 15px 15px 0;
+    background: #99E2D0;
+    color: #fff;
+    right: 0;
+    transform: translateX(0);
   }
   .container .imgSection .mainSection button {
     padding: 13px 16px;

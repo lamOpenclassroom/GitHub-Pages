@@ -1,4 +1,4 @@
-@mixin subtitle {
+@mixin subtitle{
     font-size: 1rem;
     text-transform: uppercase;
     padding-left: 13px;
@@ -13,13 +13,16 @@
     height: auto;
     padding: 12px 17px 12px 10px;
     cursor: pointer;
-    animation: defil 1000ms both;
+    animation: defil 1s both;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @mixin price {
     position: absolute;
     right: 17px;
     bottom: 12px;
+    transition: transform 2s ease-in-out;
 }
 
 @mixin travel-time-price{
@@ -33,12 +36,14 @@
     padding: 25px 20px;
     top: 0;
     bottom: 0;
-    right: 0;
+    transform: translateX(60px);
+    transition: transform 2s ease-in-out;
 }
 
 @mixin final-validation {
     border-radius: 0 15px 15px 0;
     background: #99E2D0;
     color: #fff;
-    transform-origin: right;
+    right: 0;
+    transform: translateX(0);
 }

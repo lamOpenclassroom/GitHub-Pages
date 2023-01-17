@@ -1,11 +1,12 @@
+@import "../mixins/mixins";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Shrikhand & display=swap');
-@use "/assets/SASS/mixins/mixins";
 
 @keyframes defil {
     0% {
         transform: scale(0);
     }
+
     100% {
         transform: scale(1);
     }
@@ -43,7 +44,7 @@
 
         .imgSection {
             position: relative;
-            
+
             .mainSection {
                 display: flex;
                 flex-direction: column;
@@ -52,7 +53,7 @@
                 width: 100%;
                 position: absolute;
                 top: 80%;
-                
+
                 h2 {
                     font-family: 'shrikhand', sans-serif;
                     padding: 32px 17px 42px;
@@ -77,9 +78,10 @@
                         height: 100%;
                     }
                 }
-                @for $i from 1 through 9{
-                    #menu_#{$i}{
-                        animation-delay: 1s * $i;                
+
+                @for $i from 1 through 10 {
+                    #menu_#{$i} {
+                        animation-delay: 1s * $i;
                     }
                 }
 
@@ -90,6 +92,7 @@
 
                 .mainSection__entree {
                     @include dish-list;
+
 
                     .price--entree {
                         @include price;
@@ -123,18 +126,18 @@
                         @include final-validation;
                     }
 
-                    #plat_3 {
+                    #plat_4 {
                         @include initial-validation;
                     }
 
-                    &:hover>#plat_3 {
+                    &:hover>#plat_4 {
                         @include final-validation;
                     }
                 }
 
                 /*PLATS*/
                 .mainSection__sousTitre--plat {
-                    @include subtitle;
+                   @include subtitle;
                 }
 
                 .mainSection__plat {
@@ -169,6 +172,14 @@
                     }
 
                     &:hover>#plat_6 {
+                        @include final-validation;
+                    }
+
+                    #plat_7 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_7 {
                         @include final-validation;
                     }
                 }
@@ -210,6 +221,14 @@
                     }
 
                     &:hover>#plat_9 {
+                        @include final-validation;
+                    }
+
+                    #plat_10 {
+                        @include initial-validation;
+                    }
+
+                    &:hover>#plat_10 {
                         @include final-validation;
                     }
                 }
