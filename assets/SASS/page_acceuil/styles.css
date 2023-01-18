@@ -37,15 +37,17 @@
   }
 }
 @media screen and (max-width: 768px) {
-  * {
+  .container {
+    /*mon loader*/
+  }
+  .container * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*N'augmente pas la largeur*/
     font-family: "Roboto", sans-serif;
   }
-  /*mon loader*/
-  #loader {
+  .container #loader {
     position: fixed;
     z-index: 4;
     width: 100vw;
@@ -59,23 +61,23 @@
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #loader .letter:nth-child(1) {
+  .container #loader .letter:nth-child(1) {
     -webkit-animation-delay: 0.1s;
             animation-delay: 0.1s;
   }
-  #loader .letter:nth-child(2) {
+  .container #loader .letter:nth-child(2) {
     -webkit-animation-delay: 0.2s;
             animation-delay: 0.2s;
   }
-  #loader .letter:nth-child(3) {
+  .container #loader .letter:nth-child(3) {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
-  #loader .letter:nth-child(4) {
+  .container #loader .letter:nth-child(4) {
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
   }
-  #loader ul {
+  .container #loader ul {
     list-style-type: none;
     font-size: 3rem;
     display: flex;
@@ -85,26 +87,19 @@
     height: 100%;
     align-items: center;
   }
-  #loader ul li {
+  .container #loader ul li {
     -webkit-animation: loader 1.5s infinite;
             animation: loader 1.5s infinite;
   }
-  .header__logo {
-    font-family: "shrikhand", sans-serif;
-    color: #000;
-    size: 2rem;
-    margin: 14px 0 5px 0;
-    text-align: center;
-  }
-  .header__icone {
+  .container .header__icone {
     position: relative;
   }
-  .header__icone i {
+  .container .header__icone i {
     left: 30%;
     position: absolute;
     padding-top: 15px;
   }
-  .header__icone .header__nameCity {
+  .container .header__icone .header__nameCity {
     width: 100%;
     height: 50px;
     background: #EAEAEA;
@@ -113,20 +108,20 @@
     font-weight: bold;
     border: 0;
   }
-  .sectionOne {
+  .container .sectionOne {
     background: #F6F6F6;
     text-align: center;
     padding: 39px 26px 57px 34px;
   }
-  .sectionOne .sectionOne__title {
+  .container .sectionOne .sectionOne__title {
     font-size: 2rem;
     padding-bottom: 10px;
   }
-  .sectionOne .sectionOne__para {
+  .container .sectionOne .sectionOne__para {
     font-size: 1.12rem;
     padding-bottom: 17px;
   }
-  .sectionOne .sectionOne__btn {
+  .container .sectionOne .sectionOne__btn {
     font-size: 1rem;
     padding: 13px 19px;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -135,28 +130,28 @@
     border: 0;
     color: #fff;
   }
-  .sectionOne .sectionOne__btn:hover {
+  .container .sectionOne .sectionOne__btn:hover {
     opacity: 0.8;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
     cursor: pointer;
   }
-  .sectionTwo {
+  .container .sectionTwo {
     background-color: #fff;
   }
-  .sectionTwo .sectionTwo__bloc {
+  .container .sectionTwo .sectionTwo__bloc {
     padding: 48px 20px 68px;
   }
-  .sectionTwo h2 {
+  .container .sectionTwo h2 {
     padding-bottom: 26px;
   }
-  .sectionTwo nav ul {
+  .container .sectionTwo nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 257px;
     justify-content: space-between;
   }
-  .sectionTwo nav ul .nav__list {
+  .container .sectionTwo nav ul .nav__list {
     z-index: 2;
     background: #F7F7F7;
     color: #000;
@@ -169,7 +164,7 @@
     font-size: 1rem;
     font-weight: bold;
   }
-  .sectionTwo nav ul .nav__list a {
+  .container .sectionTwo nav ul .nav__list a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -177,10 +172,10 @@
     text-decoration: none;
     width: 100%;
   }
-  .sectionTwo nav ul .nav__list a i {
+  .container .sectionTwo nav ul .nav__list a i {
     color: #7E7E7E;
   }
-  .sectionTwo nav ul .nav__list a span {
+  .container .sectionTwo nav ul .nav__list a span {
     position: absolute;
     z-index: 1;
     left: 2%;
@@ -191,20 +186,20 @@
     background: #9356DC;
     color: #fff;
   }
-  .sectionTwo nav ul .nav__list:hover {
+  .container .sectionTwo nav ul .nav__list:hover {
     background: #F5EDFF;
   }
-  .sectionTwo nav ul .nav__list:hover a > i {
+  .container .sectionTwo nav ul .nav__list:hover a > i {
     color: #9356DC;
   }
-  .sectionThree {
+  .container .sectionThree {
     background: #D2D2D2;
     padding: 54px 20px 64px;
   }
-  .sectionThree h2 {
+  .container .sectionThree h2 {
     padding-bottom: 25px;
   }
-  .sectionThree article {
+  .container .sectionThree article {
     width: 100%;
     height: 251px;
     background-color: #fff;
@@ -212,12 +207,12 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
-  .sectionThree article a {
+  .container .sectionThree article a {
     position: relative;
     color: #000;
     text-decoration: none;
   }
-  .sectionThree article a .onglet {
+  .container .sectionThree article a .onglet {
     width: 80px;
     height: 29px;
     background: #99E2D0;
@@ -230,22 +225,22 @@
     margin-top: 10px;
     padding-top: 5px;
   }
-  .sectionThree article img {
+  .container .sectionThree article img {
     width: 100%;
     height: 70%;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
-  .sectionThree article .article__titlePara {
+  .container .sectionThree article .article__titlePara {
     padding: 16px 12px;
   }
-  .sectionThree article .article__titlePara .icon-regular-heart {
+  .container .sectionThree article .article__titlePara .icon-regular-heart {
     position: absolute;
     font-size: 1.5rem;
     right: 24px;
   }
-  .sectionThree article .article__titlePara .icon-solid-heart {
+  .container .sectionThree article .article__titlePara .icon-solid-heart {
     position: absolute;
     font-size: 1.5rem;
     right: 24px;
@@ -254,31 +249,9 @@
     color: transparent;
     height: 0;
   }
-  .sectionThree article .article__titlePara .icon-solid-heart:hover {
+  .container .sectionThree article .article__titlePara .icon-solid-heart:hover {
     height: 100%;
     background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     transition: all ease-out 4s;
-  }
-  footer {
-    background: #353535;
-    color: #fff;
-    padding: 22px 0 33px 25px;
-  }
-  footer h3 {
-    font-family: "shrikhand", sans-serif;
-    font-size: 1.13rem;
-    padding-bottom: 16px;
-    font-style: italic;
-    font-weight: inherit;
-  }
-  footer a {
-    list-style-type: none;
-    text-decoration: none;
-    padding-bottom: 7px;
-    color: #fff;
-  }
-  footer a i {
-    padding-right: 11px;
-    color: #fff;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -24,21 +24,6 @@
     /*N'augmente pas la largeur*/
     font-family: "Roboto", sans-serif;
   }
-  .container header {
-    size: 2rem;
-    margin: 14px 0 5px 0;
-    text-align: center;
-  }
-  .container header a {
-    position: absolute;
-    top: 26px;
-    left: 23px;
-    font-size: 1.5rem;
-    color: #000;
-  }
-  .container header .header__logo {
-    font-family: "shrikhand", sans-serif;
-  }
   .container .imgSection {
     position: relative;
   }
@@ -416,41 +401,10 @@
     border-radius: 25px;
     border: none;
   }
-  .container .imgSection .mainSection footer {
-    background: #353535;
-    color: #fff;
-    padding: 22px 0 33px 25px;
-  }
-  .container .imgSection .mainSection footer h3 {
-    font-family: "shrikhand", sans-serif;
-    font-size: 1.13rem;
-    padding-bottom: 16px;
-    font-style: italic;
-    font-weight: inherit;
-  }
-  .container .imgSection .mainSection footer li {
-    list-style-type: none;
-    padding-bottom: 7px;
-    position: relative;
-  }
-  .container .imgSection .mainSection footer .ustensil::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #fff;
-    content: "\f2e7";
-    padding-right: 5px;
-  }
-  .container .imgSection .mainSection footer .handshake::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #fff;
-    content: "\f4c4";
-    padding-right: 5px;
-  }
   .container .imgSection img {
     width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
-}/*# sourceMappingURL=style_menu_palette.css.map */
+}/*# sourceMappingURL=style_menus.css.map */
