@@ -5,45 +5,57 @@
 }
 
 @mixin dish-list {
+    width: 100%;
     box-shadow: 0px 4.01149px 15.0431px rgb(0 0 0 / 10%);
     border-radius: 15px;
-    margin: 12px 13px;
+    margin: 12px 0 12px 13px;
     position: relative;
-    width: auto;
-    height: auto;
     padding: 12px 17px 12px 10px;
     cursor: pointer;
-    animation: defil 1s both;
+    animation: defil 0.5s both;
     white-space: nowrap;
+    overflow: hidden;    
+}
+
+@mixin flex-text-encoche{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin text-elipsis{
+    text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
 }
 
-@mixin price {
-    position: absolute;
-    right: 17px;
-    bottom: 12px;
-    transition: transform 2s ease-in-out;
+@mixin flex-bloc{
+    display: flex;
+    align-items: center;
 }
 
-@mixin travel-time-price{
-    transform: translate(-250%, 0);
+@mixin reduc-menu{
+    width: calc(100% - 80px);
+    border-radius: 15px 0 0 15px;
+    margin-right: 0;
 }
 
 @mixin initial-validation {
     color: transparent;
-    position: absolute;
-    font-size: 1.25rem;
-    padding: 25px 20px;
-    top: 0;
-    bottom: 0;
-    transform: translateX(60px);
-    transition: transform 2s ease-in-out;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
 }
 
 @mixin final-validation {
+    padding: 23px 20px;
     border-radius: 0 15px 15px 0;
+    font-size: 1.25rem;
     background: #99E2D0;
     color: #fff;
-    right: 0;
-    transform: translateX(0);
+    right: 5px;
+    transform: scale(1);
+}
+
+@mixin price {
+    right: 17px;
+    bottom: 12px;
 }

@@ -1,42 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
 
-@media screen and (max-width: 768px) {
-    .container * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      /*N'augmente pas la largeur*/
-      font-family: "Roboto", sans-serif;
 
-        footer {
-            background: #353535;
-            color: #fff;
-            padding: 22px 0 33px 25px;
+footer {
+    background: #353535;
+    color: #fff;
+    padding: 22px 0 33px 25px;
 
-            h3 {
-                font-family: "shrikhand", sans-serif;
-                font-size: 1.13rem;
-                padding-bottom: 16px;
-                font-style: italic;
-                font-weight: inherit;
-            }
-
-            ul {
-                list-style-type: none;
-                padding-bottom: 7px;
-                position: relative;
-                a{
-                    list-style-type: none;
-                    text-decoration: none;
-                    padding-bottom: 7px;
-                    color: #fff;
-                    i {
-                        padding-right: 11px;
-                        color: #fff;
-                    }
-                }
-            } 
-        }
+    h3 {
+        font-family: "shrikhand", sans-serif;
+        font-size: 1.13rem;
+        padding-bottom: 16px;
+        font-style: italic;
+        font-weight: inherit;
     }
+
+    ul {
+        list-style-type: none;
+        padding-bottom: 7px;
+        position: relative;
+        i {
+            padding-right: 11px;
+            color: #fff;
+        }
+        a{
+            list-style-type: none;
+            text-decoration: none;
+            padding-bottom: 7px;
+            color: #fff;  
+        }
+    } 
 }
