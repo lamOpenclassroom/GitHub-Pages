@@ -1,32 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Shrikhand & display=swap');
+@use "../mixins/mixins";
 /*-----------------Paramètre global---------------*/
 $color--main: #9356DC;
 
-@mixin new-tab {
-    width: 80px;
-    height: 29px;
-    background: #99E2D0;
-    color: #008766;
-    font-weight: bolder;
-    text-align: center;
-    position: absolute;
-    font-size: 1rem;
-    right: 15px;
-    margin-top: 10px;
-    padding-top: 5px;
-}
-
-@mixin list-nav {
-    position: absolute; 
-    left: -15px;     
-    border: 1px solid #9356DC;
-    border-radius: 50%;
-    padding: 5px 8px;
-    font-size: 0.93rem;
-    background: #9356DC;
-    color: #fff;
-}
 
 @keyframes loader {
     0% {
@@ -48,25 +24,6 @@ $color--main: #9356DC;
     }
 }
 
-@mixin delay {
-    .letter:nth-child(1) {
-        animation-delay: 0.1s;
-    }
-
-    .letter:nth-child(2) {
-        animation-delay: 0.2s;
-    }
-
-    .letter:nth-child(3) {
-        animation-delay: 0.3s;
-    }
-
-    .letter:nth-child(4) {
-        animation-delay: 0.4s;
-    }
-}
-
-body {
     /*mon loader*/
     #loader {
         position: fixed;
@@ -97,28 +54,6 @@ body {
         }
     }
     
-
-    .header__icone {
-        position: relative;
-
-        i {
-            left: 30%;
-            position: absolute;
-            padding-top: 15px;
-        }
-
-        .header__nameCity {
-            width: 100%;
-            height: 50px;
-            background: #EAEAEA;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: bold;
-            border: 0;
-        }
-    }
-
-
     .sectionOne {
         background: #F6F6F6;
         text-align: center;
@@ -143,6 +78,7 @@ body {
             border: 0;
             color: #fff;
             text-decoration: none;
+            white-space: nowrap;
             &:hover{
                 opacity: 0.8;
                 box-shadow: 4px 4px 4px rgb(0 0 0 / 35%);
@@ -175,7 +111,7 @@ body {
                 list-style-type: none;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
                 border-radius: 20px;
-                width: 100%;
+                width: 322px;
                 height: 72px;
                 display: flex;
                 font-weight: bold;
@@ -211,10 +147,15 @@ body {
 
     .sectionThree {
         background: #D2D2D2;
-        padding: 54px 20px 64px;
+        /*padding: 54px 20px 64px;*/
+        padding: 48px 20px 68px;
 
         h2 {
             padding-bottom: 25px;
+        }
+        #sectionThree__article{
+            display: flex;
+            flex-direction: column;
         }
 
         article {
@@ -243,18 +184,19 @@ body {
             }
 
             .article__titlePara {
-                padding: 16px 12px;
+                padding: 5px 10px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
 
                 .icon-regular-heart {
-                    position: absolute;
                     font-size: 1.5rem;
-                    right: 24px;
                 }
 
                 .icon-solid-heart {
                     position: absolute;
                     font-size: 1.5rem;
-                    right: 24px;
+                    right: 10px;
                     background-clip: text;
                     color: transparent;
                     height: 0;
@@ -267,6 +209,56 @@ body {
                 }
             }
         }
+    }   
+
+
+@media screen and (min-width:768px){
+    body{
+        .header__icone{
+            i{
+                left: 44%;
+            }
+        }
+        .sectionOne__title{
+            font-size: 2rem;
+            padding-bottom: 0;
+        }
+        .sectionOne__para{
+            font-size: 1.12rem;
+            margin: 18px 0 30px;
+        }
+        
+        .sectionTwo{
+            
+            h2 {
+                margin-left: 193px;
+            }
+            .sectionTwo__bloc--ul{
+                flex-direction: row;
+                justify-content: center;
+                height: auto;
+                .nav__list--2{
+                    margin: 0 36px;
+                }
+            }
+        }
+        .sectionThree{
+            padding: 0;
+            .sectionThree__bloc {
+                padding: 48px 20px 68px;
+                #sectionThree__article {
+                    flex-direction: row;
+                    justify-content: center;
+                    #sectionThree__article--2{
+                        margin-left: 26px;
+                        margin-right: 13px;
+                    }
+                    #sectionThree__article--3 {
+                        margin-left: 13px;
+                        margin-right: 26px;
+                    }
+                }
+            }
+        }
     }
-    
 }

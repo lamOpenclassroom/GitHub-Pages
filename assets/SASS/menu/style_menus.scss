@@ -1,4 +1,4 @@
-@import "../mixins/mixins";
+@use "../mixins/mixins";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 @keyframes defil {
@@ -55,8 +55,6 @@
                 }
             }
 
-
-/*-------------------------ENTREES--------------------------------*/
             .mainSection__sousTitre--entree,.mainSection__sousTitre--plat,.mainSection__sousTitre--dessert {
                 @include subtitle;
             }

@@ -31,3 +31,23 @@ footer {
         }
     } 
 }
+
+@media screen and (min-width:768px){
+    footer { /*pense à le mettre dans le footer*/
+        padding: 52px 0 43px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        h3 {
+            padding: 0 71px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            li{
+                padding-right: 40px;
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+/*Mixins page d'acceuil*/
+/*Mixins pages des menus*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @-webkit-keyframes defil {
   0% {
@@ -26,7 +28,6 @@
   width: 100%;
   position: absolute;
   top: 80%;
-  /*-------------------------ENTREES--------------------------------*/
   /*---------------------------------------------------------------------------------------*/
 }
 .container .imgSection .mainSection h2 {

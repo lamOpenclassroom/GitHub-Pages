@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"); /*Mixins page d'acceuil*/
+/*Mixins pages des menus*/
 /*-----------------Paramètre global---------------*/
 @-webkit-keyframes loader {
   0% {
@@ -36,10 +36,8 @@
     z-index: -1;
   }
 }
-body {
-  /*mon loader*/
-}
-body #loader {
+/*mon loader*/
+#loader {
   position: fixed;
   z-index: 4;
   width: 100vw;
@@ -53,23 +51,23 @@ body #loader {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-body #loader .letter:nth-child(1) {
+#loader .letter:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
-body #loader .letter:nth-child(2) {
+#loader .letter:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-body #loader .letter:nth-child(3) {
+#loader .letter:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-body #loader .letter:nth-child(4) {
+#loader .letter:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-body #loader ul {
+#loader ul {
   list-style-type: none;
   font-size: 3rem;
   display: flex;
@@ -79,41 +77,25 @@ body #loader ul {
   height: 100%;
   align-items: center;
 }
-body #loader ul li {
+#loader ul li {
   -webkit-animation: loader 1.5s infinite;
           animation: loader 1.5s infinite;
 }
-body .header__icone {
-  position: relative;
-}
-body .header__icone i {
-  left: 30%;
-  position: absolute;
-  padding-top: 15px;
-}
-body .header__icone .header__nameCity {
-  width: 100%;
-  height: 50px;
-  background: #EAEAEA;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 0;
-}
-body .sectionOne {
+
+.sectionOne {
   background: #F6F6F6;
   text-align: center;
   padding: 39px 26px 57px 34px;
 }
-body .sectionOne .sectionOne__title {
+.sectionOne .sectionOne__title {
   font-size: 2rem;
   padding-bottom: 10px;
 }
-body .sectionOne .sectionOne__para {
+.sectionOne .sectionOne__para {
   font-size: 1.12rem;
   padding-bottom: 17px;
 }
-body .sectionOne .sectionOne__btn a {
+.sectionOne .sectionOne__btn a {
   font-size: 1rem;
   padding: 13px 19px;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -123,39 +105,40 @@ body .sectionOne .sectionOne__btn a {
   color: #fff;
   text-decoration: none;
 }
-body .sectionOne .sectionOne__btn a:hover {
+.sectionOne .sectionOne__btn a:hover {
   opacity: 0.8;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
-body .sectionTwo {
+
+.sectionTwo {
   background-color: #fff;
 }
-body .sectionTwo .sectionTwo__bloc {
+.sectionTwo .sectionTwo__bloc {
   padding: 48px 20px 68px;
 }
-body .sectionTwo h2 {
+.sectionTwo h2 {
   padding-bottom: 26px;
 }
-body .sectionTwo nav ul {
+.sectionTwo nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 257px;
   justify-content: space-between;
 }
-body .sectionTwo nav ul .nav__list {
+.sectionTwo nav ul .nav__list {
   background: #F7F7F7;
   color: #000;
   list-style-type: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  width: 100%;
+  width: 322px;
   height: 72px;
   display: flex;
   font-weight: bold;
 }
-body .sectionTwo nav ul .nav__list a {
+.sectionTwo nav ul .nav__list a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -164,10 +147,10 @@ body .sectionTwo nav ul .nav__list a {
   width: 100%;
   position: relative;
 }
-body .sectionTwo nav ul .nav__list a i {
+.sectionTwo nav ul .nav__list a i {
   color: #7E7E7E;
 }
-body .sectionTwo nav ul .nav__list a span {
+.sectionTwo nav ul .nav__list a span {
   position: absolute;
   left: -15px;
   border: 1px solid #9356DC;
@@ -177,20 +160,26 @@ body .sectionTwo nav ul .nav__list a span {
   background: #9356DC;
   color: #fff;
 }
-body .sectionTwo nav ul .nav__list:hover {
+.sectionTwo nav ul .nav__list:hover {
   background: #F5EDFF;
 }
-body .sectionTwo nav ul .nav__list:hover a > i {
+.sectionTwo nav ul .nav__list:hover a > i {
   color: #9356DC;
 }
-body .sectionThree {
+
+.sectionThree {
   background: #D2D2D2;
-  padding: 54px 20px 64px;
+  /*padding: 54px 20px 64px;*/
+  padding: 48px 20px 68px;
 }
-body .sectionThree h2 {
+.sectionThree h2 {
   padding-bottom: 25px;
 }
-body .sectionThree article {
+.sectionThree #sectionThree__article {
+  display: flex;
+  flex-direction: column;
+}
+.sectionThree article {
   width: 100%;
   height: 251px;
   background-color: #fff;
@@ -198,12 +187,12 @@ body .sectionThree article {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-body .sectionThree article a {
+.sectionThree article a {
   position: relative;
   color: #000;
   text-decoration: none;
 }
-body .sectionThree article a .onglet {
+.sectionThree article a .onglet {
   width: 80px;
   height: 29px;
   background: #99E2D0;
@@ -216,32 +205,76 @@ body .sectionThree article a .onglet {
   margin-top: 10px;
   padding-top: 5px;
 }
-body .sectionThree article img {
+.sectionThree article img {
   width: 100%;
   height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-body .sectionThree article .article__titlePara {
-  padding: 16px 12px;
+.sectionThree article .article__titlePara {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
-body .sectionThree article .article__titlePara .icon-regular-heart {
+.sectionThree article .article__titlePara .icon-regular-heart {
+  font-size: 1.5rem;
+}
+.sectionThree article .article__titlePara .icon-solid-heart {
   position: absolute;
   font-size: 1.5rem;
-  right: 24px;
-}
-body .sectionThree article .article__titlePara .icon-solid-heart {
-  position: absolute;
-  font-size: 1.5rem;
-  right: 24px;
+  right: 10px;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
   height: 0;
 }
-body .sectionThree article .article__titlePara .icon-solid-heart:hover {
+.sectionThree article .article__titlePara .icon-solid-heart:hover {
   height: 100%;
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: all ease-out 4s;
+}
+
+@media screen and (min-width: 768px) {
+  body .header__icone i {
+    left: 44%;
+  }
+  body .sectionOne__title {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+  body .sectionOne__para {
+    font-size: 1.12rem;
+    margin: 18px 0 30px;
+  }
+  body .sectionTwo h2 {
+    margin-left: 193px;
+  }
+  body .sectionTwo .sectionTwo__bloc--ul {
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
+  body .sectionTwo .sectionTwo__bloc--ul .nav__list--2 {
+    margin: 0 36px;
+  }
+  body .sectionThree {
+    padding: 0;
+  }
+  body .sectionThree .sectionThree__bloc {
+    padding: 48px 20px 68px;
+  }
+  body .sectionThree .sectionThree__bloc #sectionThree__article {
+    flex-direction: row;
+    justify-content: center;
+  }
+  body .sectionThree .sectionThree__bloc #sectionThree__article #sectionThree__article--2 {
+    margin-left: 26px;
+    margin-right: 13px;
+  }
+  body .sectionThree .sectionThree__bloc #sectionThree__article #sectionThree__article--3 {
+    margin-left: 13px;
+    margin-right: 26px;
+  }
 }/*# sourceMappingURL=styles.css.map */
