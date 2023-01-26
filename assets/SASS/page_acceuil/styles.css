@@ -104,6 +104,7 @@
   border: 0;
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 .sectionOne .sectionOne__btn a:hover {
   opacity: 0.8;
@@ -236,7 +237,7 @@
   transition: all ease-out 4s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   body .header__icone i {
     left: 44%;
   }
@@ -249,7 +250,8 @@
     margin: 18px 0 30px;
   }
   body .sectionTwo h2 {
-    margin-left: 193px;
+    width: 1024px;
+    margin: auto;
   }
   body .sectionTwo .sectionTwo__bloc--ul {
     flex-direction: row;

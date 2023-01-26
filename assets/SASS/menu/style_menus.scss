@@ -11,18 +11,29 @@
     }
 }
 
-.container {
-    .imgSection {
-        position: relative;
+@keyframes rotateIcone{
+    0%{
+        transform:rotate(45deg)
+    }
+    50%{
+       transform:rotate(90deg);
+    }
+    100%{
+       transform:rotate(180deg);
+    }
+}
 
+.container {
+    margin: auto;
+    #bloc__mainFooter{
+        position: relative;
+        top: -60px;
+        
         .mainSection {
             display: flex;
             flex-direction: column;
             background: #F7F7F7;
             border-radius: 20px 20px 0 0;
-            width: 100%;
-            position: absolute;
-            top: 80%;
 
             h2 {
                 font-family: 'shrikhand', sans-serif;
@@ -51,7 +62,7 @@
 
             @for $i from 1 through 10 {
                 #menu_#{$i} {
-                    animation-delay: 1s * $i;
+                    animation-delay: 0.5s * $i;
                 }
             }
 
@@ -119,7 +130,7 @@
                     }
                 }
             }
-/*---------------------------------------------------------------------------------------*/
+
             #btnCommande {
                 margin: 40px 0;
                 text-align: center;
@@ -142,11 +153,19 @@
                 
             }
         }
-
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
     }
+}
 
+@media screen and (min-width:1024px) {
+    .container{
+        #bloc__mainFooter {
+            position: relative;
+            top: -250px;
+            .mainSection {
+                width: 80%;
+                margin: auto;
+                position: relative;
+            }
+        } 
+    }
 }

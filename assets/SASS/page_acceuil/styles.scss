@@ -23,7 +23,6 @@ $color--main: #9356DC;
         z-index: -1;
     }
 }
-
     /*mon loader*/
     #loader {
         position: fixed;
@@ -212,7 +211,7 @@ $color--main: #9356DC;
     }   
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1024px){
     body{
         .header__icone{
             i{
@@ -229,9 +228,9 @@ $color--main: #9356DC;
         }
         
         .sectionTwo{
-            
             h2 {
-                margin-left: 193px;
+                width: 1024px;
+                margin: auto;
             }
             .sectionTwo__bloc--ul{
                 flex-direction: row;
