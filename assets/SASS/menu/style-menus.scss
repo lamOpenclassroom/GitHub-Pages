@@ -15,11 +15,8 @@
     0%{
         transform:rotate(45deg)
     }
-    50%{
-       transform:rotate(90deg);
-    }
     100%{
-       transform:rotate(180deg);
+       transform:rotate(360deg);
     }
 }
 
@@ -72,14 +69,18 @@
 
             .bloc-entree {
                 @include flex-bloc;
-
+                
                 #plat_1,#plat_2,#plat_3,#plat_4,#plat_5,#plat_6,#plat_7,#plat_8,#plat_9,#plat_10 {
                     @include initial-validation;
                 }
 
+                .encoche-rotate {
+                    @include initial-icone; 
+                }
+
                 .mainSection__entree,.mainSection__plat,.mainSection__dessert {
                     @include dish-list;
-                    &:hover {
+                    &:hover {                
                         @include reduc-menu;
                     }
                     .elipsis {
@@ -93,40 +94,80 @@
                         @include final-validation;
                     }
 
+                    &:hover + #plat_1 + .encoche-rotate{
+                        @include final-icone; 
+                    }
+                    
                     &:hover + #plat_2{
                         @include final-validation;
+                    }
+
+                    &:hover + #plat_2 + .encoche-rotate{
+                        @include final-icone; 
                     }
 
                     &:hover + #plat_3{
                         @include final-validation;
                     }
 
+                    &:hover + #plat_3 + .encoche-rotate{
+                        @include final-icone; 
+                    }
+
                     &:hover + #plat_4{
                         @include final-validation;
+                    }
+
+                    &:hover + #plat_4 + .encoche-rotate{
+                        @include final-icone; 
                     }
 
                     &:hover + #plat_5{
                         @include final-validation;
                     }
 
+                    &:hover + #plat_5 + .encoche-rotate{
+                        @include final-icone; 
+                    }
+
                     &:hover + #plat_6{
                         @include final-validation;
+                    }
+
+                    &:hover + #plat_6 + .encoche-rotate{
+                        @include final-icone; 
                     }
 
                     &:hover + #plat_7{
                         @include final-validation;
                     }
 
+                    &:hover + #plat_7 + .encoche-rotate{
+                        @include final-icone; 
+                    }
+
                     &:hover + #plat_8{
                         @include final-validation;
+                    }
+
+                    &:hover + #plat_8 + .encoche-rotate{
+                        @include final-icone; 
                     }
 
                     &:hover + #plat_9{
                         @include final-validation;
                     }
 
+                    &:hover + #plat_9 + .encoche-rotate{
+                        @include final-icone; 
+                    }
+
                     &:hover + #plat_10{
                         @include final-validation;
+                    }
+
+                    &:hover + #plat_10 + .encoche-rotate{
+                        @include final-icone; 
                     }
                 }
             }

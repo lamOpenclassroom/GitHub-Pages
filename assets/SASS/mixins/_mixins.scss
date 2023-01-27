@@ -86,7 +86,7 @@
 @mixin initial-validation {
     color: transparent;
     transform: scale(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 @mixin final-validation {
@@ -97,6 +97,19 @@
     color: #fff;
     right: 5px;
     transform: scale(1);
+}
+
+@mixin initial-icone{
+    position: absolute;
+    right: 27px;
+    font-size: 1.25rem;
+    color: transparent;
+}
+
+@mixin final-icone{
+    animation: rotateIcone 0.5s 1s;
+    background: #99E2D0;
+    color: #fff;
 }
 
 @mixin price {
