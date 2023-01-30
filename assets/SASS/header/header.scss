@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Shrikhand & display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*N'augmente pas la largeur*/
-    font-family: 'Roboto', sans-serif;
-}
-
-
-.container {
-    margin: auto;
     header {
         size: 2rem;
         padding-top: 14px;
@@ -35,7 +22,7 @@
             align-items: center;
     
             i {
-                width: 40%;
+                width: 35%;
                 text-align: right;
             }
     
@@ -56,10 +43,13 @@
             object-fit: cover;
         }
     }  
-} 
+ 
 
 @media screen and (min-width:1024px){
     .header__icone {
         justify-content: center;
+        i {
+            width: 40%;
+        }
     }
 }

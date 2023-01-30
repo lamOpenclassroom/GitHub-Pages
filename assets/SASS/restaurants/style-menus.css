@@ -1,0 +1,986 @@
+/*Mixins page d'acceuil*/
+/*Mixins pages des menus*/
+@-webkit-keyframes defil {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes defil {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes rotateIcone {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateIcone {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#bloc__mainFooter {
+  position: relative;
+  top: -60px;
+}
+#bloc__mainFooter #menuRestaurant {
+  display: flex;
+  flex-direction: column;
+  background: #F7F7F7;
+  border-radius: 20px 20px 0 0;
+}
+#bloc__mainFooter #menuRestaurant h2 {
+  font-family: "shrikhand", sans-serif;
+  padding: 32px 17px 42px;
+  font-size: 1.75r;
+}
+#bloc__mainFooter #menuRestaurant .icon-solid-heart {
+  position: absolute;
+  top: 40px;
+  right: 41px;
+  font-size: 1.5rem;
+  color: transparent;
+  -webkit-text-stroke: #000 2px;
+  -webkit-background-clip: text;
+          background-clip: text;
+  height: 0;
+  cursor: pointer;
+}
+#bloc__mainFooter #menuRestaurant .icon-solid-heart:hover {
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-text-stroke: #fff;
+  transition: all ease-in-out 4s;
+  height: 100%;
+}
+#bloc__mainFooter #menuRestaurant #menu_1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+#bloc__mainFooter #menuRestaurant #menu_2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+#bloc__mainFooter #menuRestaurant #menu_3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+#bloc__mainFooter #menuRestaurant #menu_4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+#bloc__mainFooter #menuRestaurant #menu_5 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+#bloc__mainFooter #menuRestaurant #menu_6 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+#bloc__mainFooter #menuRestaurant #menu_7 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+#bloc__mainFooter #menuRestaurant #menu_8 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+#bloc__mainFooter #menuRestaurant #menu_9 {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+#bloc__mainFooter #menuRestaurant #menu_10 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+#bloc__mainFooter #menuRestaurant .menuRestaurant__sousTitre--1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-left: 13px;
+}
+#bloc__mainFooter #menuRestaurant .menuRestaurant__sousTitre--2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-left: 13px;
+}
+#bloc__mainFooter #menuRestaurant .menuRestaurant__sousTitre--3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-left: 13px;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree {
+  display: flex;
+  align-items: center;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_1 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_2 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_3 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_4 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_5 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_6 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_7 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_8 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_9 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree #plat_10 {
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate1 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate2 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate3 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate4 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate5 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate6 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate7 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate8 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate9 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .encoche-rotate10 {
+  position: absolute;
+  right: 27px;
+  font-size: 1.25rem;
+  color: transparent;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert {
+  width: 100%;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 12px 0 12px 13px;
+  position: relative;
+  padding: 12px 17px 12px 10px;
+  cursor: pointer;
+  -webkit-animation: defil 0.2s both;
+          animation: defil 0.2s both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover {
+  width: calc(100% - 80px);
+  border-radius: 15px 0 0 15px;
+  margin-right: 0;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree .elipsis, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat .elipsis, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert .elipsis {
+  display: flex;
+  justify-content: space-between;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree .elipsis .paragraph, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat .elipsis .paragraph, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert .elipsis .paragraph {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_1 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_1 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_1 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_2 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_2 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_2 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_3 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_3 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_3 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_4 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_4 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_4 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_5 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_5 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_5 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_6 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_6 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_6 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_7 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_7 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_7 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_8 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_8 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_8 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_9 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_9 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_9 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 {
+  padding: 23px 20px;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
+  background: #99E2D0;
+  color: #fff;
+  right: 5px;
+  transform: scale(1);
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate1, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate1 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate2, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate2 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate3, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate3 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate4, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate4 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate5, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate5 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate6, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate6 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate7, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate7 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate8, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate8 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate9, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate9 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__entree:hover + #plat_10 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__plat:hover + #plat_10 + .encoche-rotate10, #bloc__mainFooter #menuRestaurant .bloc-entree .menuRestaurant__dessert:hover + #plat_10 + .encoche-rotate10 {
+  -webkit-animation: rotateIcone 0.5s;
+          animation: rotateIcone 0.5s;
+  background: #99E2D0;
+  color: #fff;
+}
+#bloc__mainFooter #menuRestaurant .btnCommande {
+  margin: 40px 0;
+  text-align: center;
+}
+#bloc__mainFooter #menuRestaurant .btnCommande a {
+  padding: 13px 48px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  border: none;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.7s;
+}
+#bloc__mainFooter #menuRestaurant .btnCommande a:hover {
+  opacity: 0.8;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .container #bloc__mainFooter {
+    position: relative;
+    top: -250px;
+  }
+  .container #bloc__mainFooter #menuRestaurant {
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+}/*# sourceMappingURL=style-menus.css.map */

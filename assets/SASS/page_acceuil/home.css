@@ -1,24 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"); /*Mixins page d'acceuil*/
+/*Mixins page d'acceuil*/
 /*Mixins pages des menus*/
 /*-----------------Paramètre global---------------*/
-@-webkit-keyframes loader {
-  0% {
-    color: yellow;
-    text-shadow: 0 0 5px yellow;
-    opacity: 1;
-  }
-  90% {
-    color: lightgrey;
-    opacity: 0.2;
-  }
-  100% {
-    color: yellow;
-    text-shadow: 0 0 5px yellow;
-    opacity: 0;
-    z-index: -1;
-  }
-}
 @keyframes loader {
   0% {
     color: yellow;
@@ -46,26 +29,20 @@
   color: white;
   font-weight: bold;
   top: 0;
-  -webkit-animation: loader 1s 4s;
-          animation: loader 1s 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: loader 1s 4s;
+  animation-fill-mode: forwards;
 }
 #loader .letter:nth-child(1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 #loader .letter:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 #loader .letter:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 #loader .letter:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 #loader ul {
   list-style-type: none;
@@ -78,24 +55,23 @@
   align-items: center;
 }
 #loader ul li {
-  -webkit-animation: loader 1.5s infinite;
-          animation: loader 1.5s infinite;
+  animation: loader 1.5s infinite;
 }
 
-.sectionOne {
+#exploreRestaurant {
   background: #F6F6F6;
   text-align: center;
   padding: 39px 26px 57px 34px;
 }
-.sectionOne .sectionOne__title {
+#exploreRestaurant .exploreRestaurant__title {
   font-size: 2rem;
   padding-bottom: 10px;
 }
-.sectionOne .sectionOne__para {
+#exploreRestaurant .exploreRestaurant__para {
   font-size: 1.12rem;
   padding-bottom: 17px;
 }
-.sectionOne .sectionOne__btn a {
+#exploreRestaurant .exploreRestaurant__btn a {
   font-size: 1rem;
   padding: 13px 19px;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -105,30 +81,31 @@
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  transition: all 0.7s;
 }
-.sectionOne .sectionOne__btn a:hover {
+#exploreRestaurant .exploreRestaurant__btn a:hover {
   opacity: 0.8;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
-.sectionTwo {
+#filtreRestaurant {
   background-color: #fff;
 }
-.sectionTwo .sectionTwo__bloc {
+#filtreRestaurant .filtreRestaurant__bloc {
   padding: 48px 20px 68px;
 }
-.sectionTwo h2 {
+#filtreRestaurant h2 {
   padding-bottom: 26px;
 }
-.sectionTwo nav ul {
+#filtreRestaurant nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 257px;
   justify-content: space-between;
 }
-.sectionTwo nav ul .nav__list {
+#filtreRestaurant nav ul .nav__list {
   background: #F7F7F7;
   color: #000;
   list-style-type: none;
@@ -138,8 +115,9 @@
   height: 72px;
   display: flex;
   font-weight: bold;
+  transition: all 0.7s;
 }
-.sectionTwo nav ul .nav__list a {
+#filtreRestaurant nav ul .nav__list a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -148,10 +126,10 @@
   width: 100%;
   position: relative;
 }
-.sectionTwo nav ul .nav__list a i {
+#filtreRestaurant nav ul .nav__list a i {
   color: #7E7E7E;
 }
-.sectionTwo nav ul .nav__list a span {
+#filtreRestaurant nav ul .nav__list a span {
   position: absolute;
   left: -15px;
   border: 1px solid #9356DC;
@@ -161,26 +139,25 @@
   background: #9356DC;
   color: #fff;
 }
-.sectionTwo nav ul .nav__list:hover {
+#filtreRestaurant nav ul .nav__list:hover {
   background: #F5EDFF;
 }
-.sectionTwo nav ul .nav__list:hover a > i {
+#filtreRestaurant nav ul .nav__list:hover a > i {
   color: #9356DC;
 }
 
-.sectionThree {
+#choiceRestaurant {
   background: #D2D2D2;
-  /*padding: 54px 20px 64px;*/
   padding: 48px 20px 68px;
 }
-.sectionThree h2 {
+#choiceRestaurant h2 {
   padding-bottom: 25px;
 }
-.sectionThree #sectionThree__article {
+#choiceRestaurant #choiceRestaurant__article {
   display: flex;
   flex-direction: column;
 }
-.sectionThree article {
+#choiceRestaurant article {
   width: 100%;
   height: 251px;
   background-color: #fff;
@@ -188,12 +165,15 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-.sectionThree article a {
+#choiceRestaurant article a [href="/restaurants/restaurant-la-palette-du-gout.html"] > .icone-not-clic > i {
+  pointer-events: none;
+}
+#choiceRestaurant article a {
   position: relative;
   color: #000;
   text-decoration: none;
 }
-.sectionThree article a .onglet {
+#choiceRestaurant article a .onglet {
   width: 80px;
   height: 29px;
   background: #99E2D0;
@@ -206,32 +186,30 @@
   margin-top: 10px;
   padding-top: 5px;
 }
-.sectionThree article img {
+#choiceRestaurant article img {
   width: 100%;
   height: 70%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.sectionThree article .article__titlePara {
+#choiceRestaurant article .article__titlePara {
   padding: 5px 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-.sectionThree article .article__titlePara .icon-regular-heart {
+#choiceRestaurant article .article__titlePara .icon-regular-heart {
   font-size: 1.5rem;
 }
-.sectionThree article .article__titlePara .icon-solid-heart {
+#choiceRestaurant article .article__titlePara .icon-solid-heart {
   position: absolute;
   font-size: 1.5rem;
   right: 10px;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   height: 0;
 }
-.sectionThree article .article__titlePara .icon-solid-heart:hover {
+#choiceRestaurant article .article__titlePara .icon-solid-heart:hover {
   height: 100%;
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: all ease-out 4s;
@@ -241,42 +219,44 @@
   body .header__icone i {
     left: 44%;
   }
-  body .sectionOne__title {
+  body .exploreRestaurant__title {
     font-size: 2rem;
     padding-bottom: 0;
   }
-  body .sectionOne__para {
+  body .exploreRestaurant__para {
     font-size: 1.12rem;
     margin: 18px 0 30px;
   }
-  body .sectionTwo h2 {
+  body #filtreRestaurant h2 {
     width: 1024px;
     margin: auto;
   }
-  body .sectionTwo .sectionTwo__bloc--ul {
+  body #filtreRestaurant .filtreRestaurant__bloc--ul {
     flex-direction: row;
     justify-content: center;
     height: auto;
   }
-  body .sectionTwo .sectionTwo__bloc--ul .nav__list--2 {
+  body #filtreRestaurant .filtreRestaurant__bloc--ul .nav__list--2 {
     margin: 0 36px;
   }
-  body .sectionThree {
+  body #choiceRestaurant {
     padding: 0;
   }
-  body .sectionThree .sectionThree__bloc {
+  body #choiceRestaurant .choiceRestaurant__bloc {
     padding: 48px 20px 68px;
   }
-  body .sectionThree .sectionThree__bloc #sectionThree__article {
+  body #choiceRestaurant .choiceRestaurant__bloc #choiceRestaurant__article {
     flex-direction: row;
     justify-content: center;
   }
-  body .sectionThree .sectionThree__bloc #sectionThree__article #sectionThree__article--2 {
+  body #choiceRestaurant .choiceRestaurant__bloc #choiceRestaurant__article #choiceRestaurant__article--2 {
     margin-left: 26px;
     margin-right: 13px;
   }
-  body .sectionThree .sectionThree__bloc #sectionThree__article #sectionThree__article--3 {
+  body #choiceRestaurant .choiceRestaurant__bloc #choiceRestaurant__article #choiceRestaurant__article--3 {
     margin-left: 13px;
     margin-right: 26px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,125 @@
+@import "../mixins/mixins";
+@keyframes defil {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIcone{
+    0%{
+        transform:rotate(45deg)
+    }
+    100%{
+       transform:rotate(360deg);
+    }
+}
+
+
+
+   #bloc__mainFooter{
+       position: relative;
+       top: -60px;
+    
+       #menuRestaurant {
+           @include flex-menu;
+
+           h2 {
+               @include h2-style;
+           }
+
+           .icon-solid-heart {
+                @include heart-style;
+           &:hover {
+               @include heart-hover;
+               }
+           }
+
+           @for $i from 1 through 10 {
+               #menu_#{$i} {
+                   animation-delay: 0.5s * $i;
+               }
+           }
+
+           @for $i from 1 through 3 {
+                .menuRestaurant__sousTitre--#{$i}{
+                    @include subtitle;
+                }
+           }
+
+           .bloc-entree {
+               @include flex-bloc;
+                
+           @for $i from 1 through 10{
+               #plat_#{$i}{
+                   @include initial-validation;
+               }
+           }
+            
+
+           @for $i from 1 through 10{
+               .encoche-rotate#{$i} {
+                   @include initial-icone; 
+               }
+           }
+                
+
+           .menuRestaurant__entree,.menuRestaurant__plat,.menuRestaurant__dessert {
+                   @include dish-list;
+                   &:hover {                
+                       @include reduc-menu;
+                   }
+                   .elipsis {
+                   @include flex-text-encoche;
+                       .paragraph {
+                           @include text-elipsis;
+                       }
+                   }
+
+                   &:hover +{
+                       @for $i from 1 through 10{
+                           #plat_#{$i}{
+                               @include final-validation;
+                                   +{
+                                       @for $i from 1 through 10{
+                                           .encoche-rotate#{$i}{
+                                               @include final-icone;
+                                           }
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                   }
+           }
+
+           .btnCommande {
+               @include btn-commande;
+               a{ 
+               @include btn-commande-a;
+                   &:hover{
+                       @include btn-commande-hover
+                   }
+               }
+               
+           }
+       }
+   }
+
+
+@media screen and (min-width:1024px) {
+    .container{
+        #bloc__mainFooter {
+            position: relative;
+            top: -250px;
+            #menuRestaurant {
+                width: 80%;
+                margin: auto;
+                position: relative;
+            }
+        } 
+    }
+}

@@ -31,6 +31,39 @@
     }
 }
 /*Mixins pages des menus*/
+
+@mixin flex-menu{
+    display: flex;
+    flex-direction: column;
+    background: #F7F7F7;
+    border-radius: 20px 20px 0 0;
+}
+
+@mixin h2-style{
+    font-family: 'shrikhand', sans-serif;
+    padding: 32px 17px 42px;
+    font-size: 1.75r
+}
+
+@mixin heart-style{
+    position: absolute;
+           top: 40px;
+           right: 41px;
+           font-size: 1.5rem;
+           color: transparent;
+           -webkit-text-stroke: #000 2px;
+           background-clip: text;
+           height: 0;
+           cursor: pointer;
+}
+
+@mixin heart-hover{
+    background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    -webkit-text-stroke: #fff;
+    transition: all ease-in-out 4s;
+    height: 100%;
+}
+
 @mixin list-nav {
     position: absolute; 
     left: -15px;     
@@ -86,7 +119,7 @@
 @mixin initial-validation {
     color: transparent;
     transform: scale(0);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 @mixin final-validation {
@@ -107,7 +140,7 @@
 }
 
 @mixin final-icone{
-    animation: rotateIcone 0.5s 1s;
+    animation: rotateIcone 0.5s;
     background: #99E2D0;
     color: #fff;
 }
@@ -115,4 +148,28 @@
 @mixin price {
     right: 17px;
     bottom: 12px;
+}
+
+@mixin btn-commande{
+    margin: 40px 0;
+    text-align: center;
+}
+
+@mixin btn-commande-a{ 
+    padding: 13px 48px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.7s;
+}
+
+@mixin btn-commande-hover{
+    opacity: 0.8;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 35%);
+    cursor: pointer;
 }

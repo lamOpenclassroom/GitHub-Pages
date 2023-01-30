@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@use "../mixins/mixins";
+@import "../mixins/mixins";
 /*-----------------Paramètre global---------------*/
 $color--main: #9356DC;
 
@@ -53,22 +52,22 @@ $color--main: #9356DC;
         }
     }
     
-    .sectionOne {
+    #exploreRestaurant {
         background: #F6F6F6;
         text-align: center;
         padding: 39px 26px 57px 34px;
 
-        .sectionOne__title {
+        .exploreRestaurant__title {
             font-size: 2rem;
             padding-bottom: 10px;
         }
 
-        .sectionOne__para {
+        .exploreRestaurant__para {
             font-size: 1.12rem;
             padding-bottom: 17px;
         }
 
-        .sectionOne__btn a {
+        .exploreRestaurant__btn a {
             font-size: 1rem;
             padding: 13px 19px;
             background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -78,6 +77,7 @@ $color--main: #9356DC;
             color: #fff;
             text-decoration: none;
             white-space: nowrap;
+            transition: all 0.7s;
             &:hover{
                 opacity: 0.8;
                 box-shadow: 4px 4px 4px rgb(0 0 0 / 35%);
@@ -86,10 +86,10 @@ $color--main: #9356DC;
         }
     }
 
-    .sectionTwo {
+    #filtreRestaurant {
         background-color: #fff;
 
-        .sectionTwo__bloc {
+        .filtreRestaurant__bloc {
             padding: 48px 20px 68px;
         }
 
@@ -114,6 +114,7 @@ $color--main: #9356DC;
                 height: 72px;
                 display: flex;
                 font-weight: bold;
+                transition: all 0.7s;
 
                 a {
                     display: flex;
@@ -144,15 +145,14 @@ $color--main: #9356DC;
         }
     }
 
-    .sectionThree {
+    #choiceRestaurant {
         background: #D2D2D2;
-        /*padding: 54px 20px 64px;*/
         padding: 48px 20px 68px;
 
         h2 {
             padding-bottom: 25px;
         }
-        #sectionThree__article{
+        #choiceRestaurant__article{
             display: flex;
             flex-direction: column;
         }
@@ -164,7 +164,7 @@ $color--main: #9356DC;
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-
+            
             a {
                 position: relative;
                 color: #000;
@@ -199,7 +199,7 @@ $color--main: #9356DC;
                     background-clip: text;
                     color: transparent;
                     height: 0;
-
+    
                     &:hover {
                         height: 100%;
                         background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -218,21 +218,21 @@ $color--main: #9356DC;
                 left: 44%;
             }
         }
-        .sectionOne__title{
+        .exploreRestaurant__title{
             font-size: 2rem;
             padding-bottom: 0;
         }
-        .sectionOne__para{
+        .exploreRestaurant__para{
             font-size: 1.12rem;
             margin: 18px 0 30px;
         }
         
-        .sectionTwo{
+        #filtreRestaurant{
             h2 {
                 width: 1024px;
                 margin: auto;
             }
-            .sectionTwo__bloc--ul{
+            .filtreRestaurant__bloc--ul{
                 flex-direction: row;
                 justify-content: center;
                 height: auto;
@@ -241,18 +241,18 @@ $color--main: #9356DC;
                 }
             }
         }
-        .sectionThree{
+        #choiceRestaurant{
             padding: 0;
-            .sectionThree__bloc {
+            .choiceRestaurant__bloc {
                 padding: 48px 20px 68px;
-                #sectionThree__article {
+                #choiceRestaurant__article {
                     flex-direction: row;
                     justify-content: center;
-                    #sectionThree__article--2{
+                    #choiceRestaurant__article--2{
                         margin-left: 26px;
                         margin-right: 13px;
                     }
-                    #sectionThree__article--3 {
+                    #choiceRestaurant__article--3 {
                         margin-left: 13px;
                         margin-right: 26px;
                     }
