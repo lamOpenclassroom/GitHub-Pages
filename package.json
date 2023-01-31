@@ -1,0 +1,20 @@
+{
+  "name": "projectohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamOpenclassroom/OpenclassroomsProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamOpenclassroom/OpenclassroomsProject/issues"
+  },
+  "homepage": "https://github.com/lamOpenclassroom/OpenclassroomsProject#readme"
+}
