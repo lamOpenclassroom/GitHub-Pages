@@ -42,7 +42,7 @@
 @mixin h2-style{
     font-family: 'shrikhand', sans-serif;
     padding: 32px 17px 42px;
-    font-size: 1.75r
+    font-size: 1.75rem;
 }
 
 @mixin heart-style{
@@ -83,20 +83,23 @@
 
 @mixin dish-list {
     width: 100%;
+    height: 65px;
     box-shadow: 0px 4.01149px 15.0431px rgb(0 0 0 / 10%);
     border-radius: 15px;
-    margin: 12px 0 12px 13px;
+    margin: 12px 13px;
     position: relative;
     padding: 12px 17px 12px 10px;
     cursor: pointer;
     animation: defil 0.2s both;
     white-space: nowrap;
-    overflow: hidden;    
+    overflow: hidden;   
+    transition: all 0.5s 0.2s;
 }
 
 @mixin flex-text-encoche{
     display: flex;
     justify-content: space-between;
+    padding-right: 10px;
 }
 
 @mixin text-elipsis{
@@ -108,6 +111,9 @@
 @mixin flex-bloc{
     display: flex;
     align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 @mixin reduc-menu{
@@ -116,33 +122,24 @@
     margin-right: 0;
 }
 
-@mixin initial-validation {
-    color: transparent;
-    transform: scale(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-@mixin final-validation {
-    padding: 23px 20px;
+@mixin init-encoche{
+    display: flex;
+    transform: translateX(100%);
+    width: 70px;
+    height: 70px;
+    background: #99E2D0;
     border-radius: 0 15px 15px 0;
-    font-size: 1.25rem;
-    background: #99E2D0;
-    color: #fff;
-    right: 5px;
-    transform: scale(1);
-}
-
-@mixin initial-icone{
+    transition: all 0.5s 0.2s;
+    cursor: pointer;
     position: absolute;
-    right: 27px;
-    font-size: 1.25rem;
-    color: transparent;
+    right:0;
 }
 
-@mixin final-icone{
-    animation: rotateIcone 0.5s;
-    background: #99E2D0;
+@mixin init-icone{
     color: #fff;
+    margin: auto;
+    font-size: 1.25rem;
+    transition: all 0.5s 0.2s;
 }
 
 @mixin price {

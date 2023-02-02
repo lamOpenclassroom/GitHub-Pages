@@ -10,17 +10,6 @@
     }
 }
 
-@keyframes rotateIcone{
-    0%{
-        transform:rotate(45deg)
-    }
-    100%{
-       transform:rotate(360deg);
-    }
-}
-
-
-
    #bloc__mainFooter{
        position: relative;
        top: -60px;
@@ -50,74 +39,72 @@
                     @include subtitle;
                 }
            }
-
-           .bloc-menus {
+    
+            .bloc-menus {
                @include flex-bloc;
+
+                .bloc-encoche{ 
+                    @include init-encoche;
+                    @for $i from 1 through 10{
+                        #plat_#{$i}{       
+                            @include init-icone;
+                        }
+                    }
+                }
+
+                &:hover .bloc-encoche{
+                    transform: translateX(-15%);
+                    @for $i from 1 through 10{
+                        #plat_#{$i}{
+                            transform: rotate(360deg);
+                        }
+                    }
+                } 
+
+                &:hover {
+                    @for $i from 1 through 10{
+                        #menu_#{$i}{
+                            @include reduc-menu;
+                        }
+                    }
+                }
+            }   
                 
-           @for $i from 1 through 10{
-               #plat_#{$i}{
-                   @include initial-validation;
-               }
-           }
-            
-
-           @for $i from 1 through 10{
-               .encoche-rotate#{$i} {
-                   @include initial-icone; 
-               }
-           }
-                
-
-           .menuRestaurant__entree,.menuRestaurant__plat,.menuRestaurant__dessert {
-                   @include dish-list;
-                   &:hover {                
-                       @include reduc-menu;
-                   }
-                   .elipsis {
-                   @include flex-text-encoche;
-                       .paragraph {
-                           @include text-elipsis;
-                       }
-                       .price{
-                        font-weight: bold;
-                       }
-                   }
-
-                   &:hover +{
-                       @for $i from 1 through 10{
-                           #plat_#{$i}{
-                               @include final-validation;
-                                   +{
-                                       @for $i from 1 through 10{
-                                           .encoche-rotate#{$i}{
-                                               @include final-icone;
-                                           }
-                                       }
-                                   }
-                               }
-                           }
-                       }
-                   }
-           }
+            .menuRestaurant__entree, .menuRestaurant__plat,.menuRestaurant__dessert {
+                    @include dish-list;
+                    h3{
+                        @include text-elipsis;
+                    }
+                    .elipsis {
+                    @include flex-text-encoche;
+                        .paragraph {
+                            @include text-elipsis;
+                        }
+                        .price{
+                            font-weight: bold;
+                        }
+                    }
+  
+            }
 
            .btnCommande {
                @include btn-commande;
                a{ 
                @include btn-commande-a;
                    &:hover{
-                       @include btn-commande-hover
+                       @include btn-commande-hover;
                    }
                }
                
            }
-       }
-   }
+        }
+    }
+   
 
 
 @media screen and (min-width:1024px) {
     .container{
         #bloc__mainFooter {
-            position: relative;
             top: -250px;
             .menuRestaurant {
                 width: 80%;

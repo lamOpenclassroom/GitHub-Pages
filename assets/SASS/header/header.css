@@ -17,33 +17,19 @@ header .header__icone {
   display: flex;
   background: #EAEAEA;
   align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 header .header__icone i {
-  width: 35%;
-  text-align: right;
+  padding-right: 15px;
 }
-header .header__icone .header__nameCity {
-  width: 100%;
-  height: 50px;
-  background: #EAEAEA;
-  text-align: left;
+header .header__icone p {
   font-size: 1rem;
   font-weight: bold;
-  border: 0;
-  width: 50%;
-  padding-left: 15px;
+  color: #353535;
 }
 header img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media screen and (min-width: 1024px) {
-  .header__icone {
-    justify-content: center;
-  }
-  .header__icone i {
-    width: 40%;
-  }
 }/*# sourceMappingURL=header.css.map */
