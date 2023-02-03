@@ -4,13 +4,14 @@ header {
     text-align: center;
     a {
         position: absolute;
-        top: 26px;
+        top: 15px;
         left: 23px;
         font-size: 1.5rem;
         color: #000;
     }
     .header__logo {
-        font-family: 'shrikhand', sans-serif;
+        width: 150px;
+        padding-bottom: 10px;
         }
     .header__icone {
         display: flex;

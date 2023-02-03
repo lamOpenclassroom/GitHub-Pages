@@ -41,7 +41,7 @@
 
 @mixin h2-style{
     font-family: 'shrikhand', sans-serif;
-    padding: 32px 17px 42px;
+    padding: 32px 17px 0;
     font-size: 1.75rem;
 }
 
@@ -78,7 +78,11 @@
 @mixin subtitle{
     font-size: 1rem;
     text-transform: uppercase;
-    padding-left: 13px;
+    margin-left: 13px;
+    padding-bottom: 5px;
+    border-bottom: solid #99E2D0 3px;
+    width: 40px;
+    padding-top: 40px;
 }
 
 @mixin dish-list {
