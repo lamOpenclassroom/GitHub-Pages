@@ -45,23 +45,30 @@
     font-size: 1.75rem;
 }
 
-@mixin heart-style{
+@mixin double-heart{
     position: absolute;
-           top: 40px;
-           right: 41px;
-           font-size: 1.5rem;
-           color: transparent;
-           -webkit-text-stroke: #000 2px;
-           background-clip: text;
-           height: 0;
-           cursor: pointer;
+    top: 40px;
+    right: 41px;
+    font-size: 1.5rem;
+    height: auto;
 }
 
-@mixin heart-hover{
+@mixin heart-regular{
+    position: absolute;
+    transition: all 2s;
+}
+
+@mixin heart-solid{
+    background-clip: text;
+    color: transparent;
     background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    -webkit-text-stroke: #fff;
-    transition: all ease-in-out 4s;
-    height: 100%;
+    opacity: 0;
+    transition: all 2s;
+}
+
+@mixin heart-solid-hover{
+    opacity: 1;
+    cursor: pointer;             
 }
 
 @mixin list-nav {
@@ -69,6 +76,7 @@
     left: -15px;     
     border: 1px solid #9356DC;
     border-radius: 50%;
+    clip-path: ellipse(50% 50%);
     padding: 5px 8px;
     font-size: 0.93rem;
     background: #9356DC;
@@ -98,12 +106,14 @@
     white-space: nowrap;
     overflow: hidden;   
     transition: all 0.5s 0.2s;
+    background: white;
 }
 
 @mixin flex-text-encoche{
     display: flex;
     justify-content: space-between;
-    padding-right: 10px;
+    width: 100%;
+    transition: all 0.5s 0.2s;
 }
 
 @mixin text-elipsis{
@@ -120,10 +130,8 @@
     position: relative;
 }
 
-@mixin reduc-menu{
-    width: calc(100% - 80px);
-    border-radius: 15px 0 0 15px;
-    margin-right: 0;
+@mixin reduc-width{
+    width: calc(100% - 60px);
 }
 
 @mixin init-encoche{
@@ -137,6 +145,7 @@
     cursor: pointer;
     position: absolute;
     right:0;
+    top: 0;
 }
 
 @mixin init-icone{

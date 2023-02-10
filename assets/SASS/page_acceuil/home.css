@@ -1,35 +1,18 @@
 /*Mixins page d'acceuil*/
 /*Mixins pages des menus*/
-@-webkit-keyframes loader {
-  0% {
-    color: yellow;
-    text-shadow: 0 0 5px yellow;
-    opacity: 1;
-  }
-  90% {
-    color: lightgrey;
-    opacity: 0.2;
-  }
-  100% {
-    color: yellow;
-    text-shadow: 0 0 5px yellow;
-    opacity: 0;
-    z-index: -1;
-  }
-}
 @keyframes loader {
   0% {
-    color: yellow;
-    text-shadow: 0 0 5px yellow;
+    color: rgb(176, 90, 176);
+    text-shadow: 0 0 5px rgb(176, 90, 176);
     opacity: 1;
   }
   90% {
-    color: lightgrey;
+    color: rgb(176, 90, 176);
     opacity: 0.2;
   }
   100% {
-    color: yellow;
-    text-shadow: 0 0 5px yellow;
+    color: rgb(176, 90, 176);
+    text-shadow: 0 0 5px rgb(176, 90, 176);
     opacity: 0;
     z-index: -1;
   }
@@ -44,26 +27,20 @@
   color: white;
   font-weight: bold;
   top: 0;
-  -webkit-animation: loader 1s 4s;
-          animation: loader 1s 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: loader 1s 4s;
+  animation-fill-mode: forwards;
 }
 #loader .letter:nth-child(1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 #loader .letter:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 #loader .letter:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 #loader .letter:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 #loader ul {
   list-style-type: none;
@@ -76,8 +53,7 @@
   align-items: center;
 }
 #loader ul li {
-  -webkit-animation: loader 1.5s infinite;
-          animation: loader 1.5s infinite;
+  animation: loader 1.5s infinite;
 }
 
 #exploreRestaurant {
@@ -157,6 +133,8 @@
   left: -15px;
   border: 1px solid #9356DC;
   border-radius: 50%;
+  -webkit-clip-path: ellipse(50% 50%);
+          clip-path: ellipse(50% 50%);
   padding: 5px 8px;
   font-size: 0.93rem;
   background: #9356DC;
@@ -170,7 +148,7 @@
 }
 
 #choiceRestaurant {
-  background: #D2D2D2;
+  background: #F6F6F6;
   padding: 48px 20px 68px;
 }
 #choiceRestaurant h2 {
@@ -215,23 +193,30 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-#choiceRestaurant article .article__titlePara .icon-regular-heart {
+#choiceRestaurant article .article__titlePara .heart_transition {
   font-size: 1.5rem;
+  /*heart solid*/
+  /*heart regular*/
 }
-#choiceRestaurant article .article__titlePara .icon-solid-heart {
+#choiceRestaurant article .article__titlePara .heart_transition .icon-solid-heart {
   position: absolute;
-  font-size: 1.5rem;
   right: 10px;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
-  height: 0;
-}
-#choiceRestaurant article .article__titlePara .icon-solid-heart:hover {
-  height: 100%;
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  transition: all ease-out 4s;
+  opacity: 0;
+  transition: all 2s;
+}
+#choiceRestaurant article .article__titlePara .heart_transition:hover > .icon-solid-heart {
+  opacity: 1;
   cursor: pointer;
+}
+#choiceRestaurant article .article__titlePara .heart_transition .icon-regular-heart {
+  transition: all 2s;
+}
+#choiceRestaurant article .article__titlePara .heart_transition:hover .icon-regular-heart {
+  color: transparent;
 }
 
 @media screen and (min-width: 1024px) {

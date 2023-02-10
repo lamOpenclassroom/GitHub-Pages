@@ -21,12 +21,25 @@
                @include h2-style;
            }
 
-           .icon-solid-heart {
-                @include heart-style;
-           &:hover {
-               @include heart-hover;
-               }
-           }
+           .heart_transition {
+                @include double-heart;
+                /*regular heart*/
+                .icon-regular-heart{
+                    @include heart-regular;
+                }
+                &:hover .icon-regular-heart{
+                    color: transparent;
+                }
+
+                /*solid heart*/
+                .icon-solid-heart {
+                    @include heart-solid;
+                }
+
+                &:hover > .icon-solid-heart{
+                    @include heart-solid-hover;
+                }
+            } 
 
            @for $i from 1 through 10 {
                #menu_#{$i} {
@@ -43,37 +56,18 @@
             .bloc-menus {
                @include flex-bloc;
 
-                .bloc-encoche{ 
-                    @include init-encoche;
-                    @for $i from 1 through 10{
-                        #plat_#{$i}{       
-                            @include init-icone;
-                        }
-                    }
-                }
-
-                &:hover .bloc-encoche{
-                    transform: translateX(-15%);
-                    @for $i from 1 through 10{
-                        #plat_#{$i}{
-                            transform: rotate(360deg);
-                        }
-                    }
-                } 
-
-                &:hover {
-                    @for $i from 1 through 10{
-                        #menu_#{$i}{
-                            @include reduc-menu;
-                        }
-                    }
-                }
-            }   
-                
-            .menuRestaurant__entree, .menuRestaurant__plat,.menuRestaurant__dessert {
+                             
+                .menuRestaurant__entree,.menuRestaurant__plat,.menuRestaurant__dessert{
                     @include dish-list;
+                    &:hover h3{
+                        @include reduc-width;
+                    }
                     h3{
+                        transition: all 0.5s 0.2s;
                         @include text-elipsis;
+                    }
+                    &:hover .elipsis{
+                        @include reduc-width;
                     }
                     .elipsis {
                     @include flex-text-encoche;
@@ -84,8 +78,26 @@
                             font-weight: bold;
                         }
                     }
-  
-            }
+
+                    .bloc-encoche{ 
+                        @include init-encoche;
+                        @for $i from 1 through 10{
+                            #plat_#{$i}{       
+                                @include init-icone;
+                            }
+                        }
+                    }
+
+                    &:hover .bloc-encoche{
+                        transform: translateX(0);
+                        @for $i from 1 through 10{
+                            #plat_#{$i}{
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }  
+                }
+            }   
 
            .btnCommande {
                @include btn-commande;

@@ -2,19 +2,19 @@
 
 @keyframes loader {
     0% {
-        color: yellow;
-        text-shadow: 0 0 5px yellow;
+        color: rgb(176, 90, 176);
+        text-shadow: 0 0 5px rgb(176, 90, 176);
         opacity: 1;
     }
 
     90% {
-        color: lightgrey;
+        color: rgb(176, 90, 176);
         opacity: 0.2;
     }
 
     100% {
-        color: yellow;
-        text-shadow: 0 0 5px yellow;
+        color: rgb(176, 90, 176);
+        text-shadow: 0 0 5px rgb(176, 90, 176);
         opacity: 0;
         z-index: -1;
     }
@@ -144,7 +144,7 @@
     }
 
     #choiceRestaurant {
-        background: #D2D2D2;
+        background: #F6F6F6;
         padding: 48px 20px 68px;
 
         h2 {
@@ -182,24 +182,32 @@
                 flex-direction: row-reverse;
                 justify-content: space-between;
 
-                .icon-regular-heart {
+                .heart_transition{
                     font-size: 1.5rem;
-                }
-               
-
-                .icon-solid-heart {
-                    position: absolute;
-                    font-size: 1.5rem;
-                    right: 10px;
-                    background-clip: text;
-                    color: transparent;
-                    height: 0;
-                    &:hover{
-                        height: 100%;
+                    /*heart solid*/
+                    .icon-solid-heart {
+                        position: absolute;
+                        right: 10px;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
                         background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-                        transition: all ease-out 4s;
+                        opacity: 0;
+                        transition: all 2s;
+                    }
+                    &:hover > .icon-solid-heart{
+                        opacity: 1;
                         cursor: pointer;
                     }
+                    /*heart regular*/
+                    .icon-regular-heart{
+                        transition: all 2s;
+                    }
+                    &:hover .icon-regular-heart{
+                        color: transparent;
+                    }
+
+                    
                 }
             }
         }

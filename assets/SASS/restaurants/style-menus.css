@@ -1,13 +1,5 @@
 /*Mixins page d'acceuil*/
 /*Mixins pages des menus*/
-@-webkit-keyframes defil {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes defil {
   0% {
     transform: scale(0);
@@ -31,63 +23,63 @@
   padding: 32px 17px 0;
   font-size: 1.75rem;
 }
-#bloc__mainFooter .menuRestaurant .icon-solid-heart {
+#bloc__mainFooter .menuRestaurant .heart_transition {
   position: absolute;
   top: 40px;
   right: 41px;
   font-size: 1.5rem;
+  height: auto;
+  /*regular heart*/
+  /*solid heart*/
+}
+#bloc__mainFooter .menuRestaurant .heart_transition .icon-regular-heart {
+  position: absolute;
+  transition: all 2s;
+}
+#bloc__mainFooter .menuRestaurant .heart_transition:hover .icon-regular-heart {
   color: transparent;
-  -webkit-text-stroke: #000 2px;
+}
+#bloc__mainFooter .menuRestaurant .heart_transition .icon-solid-heart {
   -webkit-background-clip: text;
           background-clip: text;
-  height: 0;
+  color: transparent;
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  opacity: 0;
+  transition: all 2s;
+}
+#bloc__mainFooter .menuRestaurant .heart_transition:hover > .icon-solid-heart {
+  opacity: 1;
   cursor: pointer;
 }
-#bloc__mainFooter .menuRestaurant .icon-solid-heart:hover {
-  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  -webkit-text-stroke: #fff;
-  transition: all ease-in-out 4s;
-  height: 100%;
-}
 #bloc__mainFooter .menuRestaurant #menu_1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 #bloc__mainFooter .menuRestaurant #menu_2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 #bloc__mainFooter .menuRestaurant #menu_3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 #bloc__mainFooter .menuRestaurant #menu_4 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 #bloc__mainFooter .menuRestaurant #menu_5 {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 #bloc__mainFooter .menuRestaurant #menu_6 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 #bloc__mainFooter .menuRestaurant #menu_7 {
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  animation-delay: 3.5s;
 }
 #bloc__mainFooter .menuRestaurant #menu_8 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 #bloc__mainFooter .menuRestaurant #menu_9 {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 #bloc__mainFooter .menuRestaurant #menu_10 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 #bloc__mainFooter .menuRestaurant .menuRestaurant__sousTitre--1 {
   font-size: 1rem;
@@ -123,7 +115,48 @@
   width: 100%;
   position: relative;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert {
+  width: 100%;
+  height: 65px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 12px 13px;
+  position: relative;
+  padding: 12px 17px 12px 10px;
+  cursor: pointer;
+  animation: defil 0.2s both;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.5s 0.2s;
+  background: white;
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover h3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover h3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover h3 {
+  width: calc(100% - 60px);
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree h3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat h3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert h3 {
+  transition: all 0.5s 0.2s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .elipsis, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .elipsis, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .elipsis {
+  width: calc(100% - 60px);
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .elipsis, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .elipsis, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .elipsis {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: all 0.5s 0.2s;
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .elipsis .paragraph, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .elipsis .paragraph, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .elipsis .paragraph {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .elipsis .price, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .elipsis .price, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .elipsis .price {
+  font-weight: bold;
+}
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche {
   display: flex;
   transform: translateX(100%);
   width: 70px;
@@ -134,182 +167,100 @@
   cursor: pointer;
   position: absolute;
   right: 0;
+  top: 0;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_1 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_1, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_1, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_1 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_2 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_2, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_2, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_2 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_3 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_3 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_4 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_4, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_4, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_4 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_5 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_5, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_5, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_5 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_6 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_6, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_6, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_6 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_7 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_7, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_7, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_7 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_8 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_8, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_8, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_8 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_9 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_9, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_9, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_9 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus .bloc-encoche #plat_10 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree .bloc-encoche #plat_10, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat .bloc-encoche #plat_10, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert .bloc-encoche #plat_10 {
   color: #fff;
   margin: auto;
   font-size: 1.25rem;
   transition: all 0.5s 0.2s;
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche {
-  transform: translateX(-15%);
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche {
+  transform: translateX(0);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_1 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_1, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_1, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_1 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_2 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_2, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_2, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_2 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_3 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_3, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_3 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_4 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_4, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_4, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_4 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_5 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_5, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_5, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_5 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_6 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_6, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_6, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_6 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_7 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_7, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_7, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_7 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_8 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_8, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_8, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_8 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_9 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_9, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_9, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_9 {
   transform: rotate(360deg);
 }
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover .bloc-encoche #plat_10 {
+#bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__entree:hover .bloc-encoche #plat_10, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__plat:hover .bloc-encoche #plat_10, #bloc__mainFooter .menuRestaurant .bloc-menus .menuRestaurant__dessert:hover .bloc-encoche #plat_10 {
   transform: rotate(360deg);
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_1 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_2 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_3 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_4 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_5 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_6 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_7 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_8 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_9 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .bloc-menus:hover #menu_10 {
-  width: calc(100% - 80px);
-  border-radius: 15px 0 0 15px;
-  margin-right: 0;
-}
-#bloc__mainFooter .menuRestaurant .menuRestaurant__entree, #bloc__mainFooter .menuRestaurant .menuRestaurant__plat, #bloc__mainFooter .menuRestaurant .menuRestaurant__dessert {
-  width: 100%;
-  height: 65px;
-  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin: 12px 13px;
-  position: relative;
-  padding: 12px 17px 12px 10px;
-  cursor: pointer;
-  -webkit-animation: defil 0.2s both;
-          animation: defil 0.2s both;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: all 0.5s 0.2s;
-}
-#bloc__mainFooter .menuRestaurant .menuRestaurant__entree h3, #bloc__mainFooter .menuRestaurant .menuRestaurant__plat h3, #bloc__mainFooter .menuRestaurant .menuRestaurant__dessert h3 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-#bloc__mainFooter .menuRestaurant .menuRestaurant__entree .elipsis, #bloc__mainFooter .menuRestaurant .menuRestaurant__plat .elipsis, #bloc__mainFooter .menuRestaurant .menuRestaurant__dessert .elipsis {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 10px;
-}
-#bloc__mainFooter .menuRestaurant .menuRestaurant__entree .elipsis .paragraph, #bloc__mainFooter .menuRestaurant .menuRestaurant__plat .elipsis .paragraph, #bloc__mainFooter .menuRestaurant .menuRestaurant__dessert .elipsis .paragraph {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-#bloc__mainFooter .menuRestaurant .menuRestaurant__entree .elipsis .price, #bloc__mainFooter .menuRestaurant .menuRestaurant__plat .elipsis .price, #bloc__mainFooter .menuRestaurant .menuRestaurant__dessert .elipsis .price {
-  font-weight: bold;
 }
 #bloc__mainFooter .menuRestaurant .btnCommande {
   margin: 40px 0;
